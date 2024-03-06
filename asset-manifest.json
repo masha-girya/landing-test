@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing-test/static/css/main.1528a2eb.css",
-    "main.js": "/landing-test/static/js/main.01bb1f20.js",
+    "main.css": "/landing-test/static/css/main.c86ece59.css",
+    "main.js": "/landing-test/static/js/main.8f20cd6d.js",
     "static/media/banner-owl.png": "/landing-test/static/media/banner-owl.07ac560ced38d86aaf29.png",
     "static/media/owl-chat.png": "/landing-test/static/media/owl-chat.d89e367100e3f68343c0.png",
     "static/media/schema.png": "/landing-test/static/media/schema.944fd294f8d06edb44f8.png",
@@ -18,11 +18,11 @@
     "static/media/rainbow.png": "/landing-test/static/media/rainbow.e838c9f73582c9e6a05f.png",
     "static/media/banner-title.png": "/landing-test/static/media/banner-title.73d87f16f8bc2a2affaf.png",
     "index.html": "/landing-test/index.html",
-    "main.1528a2eb.css.map": "/landing-test/static/css/main.1528a2eb.css.map",
-    "main.01bb1f20.js.map": "/landing-test/static/js/main.01bb1f20.js.map"
+    "main.c86ece59.css.map": "/landing-test/static/css/main.c86ece59.css.map",
+    "main.8f20cd6d.js.map": "/landing-test/static/js/main.8f20cd6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1528a2eb.css",
-    "static/js/main.01bb1f20.js"
+    "static/css/main.c86ece59.css",
+    "static/js/main.8f20cd6d.js"
   ]
 }
