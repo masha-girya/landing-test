@@ -2,7 +2,7 @@
 import classNames from 'classnames';
 import { ImageBox } from './image-box';
 import { Button } from 'components';
-import { InputBox } from './input-box';
+import { Form } from './form';
 import { ROUTES } from 'app-constants';
 import SchemaImg from 'styles/assets/schema.png';
 import OwlTopImg from 'styles/assets/owl-chat-top.png';
@@ -50,7 +50,7 @@ export const Features = () => {
             Owly's core, ChatGPT, ensures secure, topic-focused conversations,
             fostering a safe educational environment for your child's curiosity
           </p>
-          <InputBox />
+          <Form />
         </div>
       </article>
     </section>

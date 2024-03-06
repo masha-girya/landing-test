@@ -1,15 +1,19 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { useState } from 'react';
 import { Button } from 'components';
-import styles from './input-box.module.scss';
+import styles from './form.module.scss';
 
-export const InputBox = () => {
+export const Form = () => {
   const [isError] = useState(false);
   const [isLoading] = useState(false);
   const [email, setEmail] = useState('');
 
   return (
-    <div className={styles.inputBox}>
+    <form
+      method="post"
+      className={styles.inputBox}
+      onSubmit={(e) => e.preventDefault()}
+    >
       <input
         type="email"
         name="email"
@@ -26,6 +30,6 @@ export const InputBox = () => {
       />
 
       {isError && <p>Error occured, please, reload the page and try again</p>}
-    </div>
+    </form>
   );
 };
