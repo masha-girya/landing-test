@@ -1,0 +1,27 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  min-width: 189px;
+
+  &:last-of-type {
+    min-width: 149px;
+  }
+
+  &__link {
+    @include mixins.navFont;
+    color: var.$color-white;
+
+    opacity: 0.4;
+
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

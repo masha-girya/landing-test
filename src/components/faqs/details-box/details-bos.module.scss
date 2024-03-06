@@ -1,0 +1,92 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.details {
+  padding: 32px;
+
+  background-color: var.$color-grey-background;
+  border-radius: 24px;
+
+  transition: background-color 0.3s ease;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var.$color-blue-background;
+  }
+
+  &[open] {
+    background-color: var.$color-blue-background;
+  }
+
+  &__questionBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+  }
+
+  &__question {
+    list-style: none;
+
+    @include mixins.boxTitleFont;
+
+    transition: color 0.2s ease;
+  }
+
+  &[open] &__question {
+    color: var.$color-blue-main;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+
+    background-color: var.$color-white;
+    border-radius: 50%;
+
+    @include mixins.demoFont;
+
+    transition: background-color 0.3s linear, color 0.2s linear;
+  }
+
+  &[open] &__number {
+    background-color: var.$color-blue-main;
+    color: var.$color-white;
+  }
+
+  &__arrow {
+    transition: transform 0.3s ease;
+
+    path {
+      transition: stroke 0.3s linear;
+    }
+  }
+
+  &[open] &__arrow {
+    transform: rotate(180deg);
+
+    path {
+      stroke: var.$color-blue-main;
+    }
+  }
+
+  &__answer {
+    padding: 16px 32px 0 72px;
+    @include mixins.boxTextFont;
+    color: var.$color-blue-main;
+  }
+}

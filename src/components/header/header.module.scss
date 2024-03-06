@@ -1,0 +1,19 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+
+  padding: 28px 0 0;
+
+  &__logo {
+    width: 167px;
+  }
+
+  &__button {
+    max-height: 60px;
+  }
+}

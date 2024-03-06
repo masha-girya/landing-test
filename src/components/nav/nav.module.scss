@@ -1,0 +1,21 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 60px;
+
+    &__link {
+      color: var.$color-grey-main;
+
+      @include mixins.navFont;
+
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var.$color-blue-main;
+      }
+    }
+  }
+}

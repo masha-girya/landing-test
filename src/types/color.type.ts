@@ -1,0 +1,1 @@
+export type TColor = 'orange' | 'blue' | 'green';

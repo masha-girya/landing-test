@@ -1,0 +1,40 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.imageBox {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 632px;
+  height: 632px;
+
+  padding: 44px;
+
+  background-color: var.$color-grey-background;
+
+  border-radius: 40px;
+
+  &__img {
+    height: 100%;
+  }
+
+  &__topImg {
+    position: absolute;
+    top: -116px;
+    left: -130px;
+
+    width: 340px;
+
+    &_isOwl {
+      top: -100px;
+      left: -72px;
+
+      width: 208px;
+
+      transform: rotate(25deg) scaleX(-1);
+    }
+  }
+}

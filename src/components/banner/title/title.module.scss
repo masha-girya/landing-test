@@ -1,0 +1,52 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 94px;
+
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    height: 105px;
+  }
+
+  &__welcomeImg {
+    position: relative;
+    top: 10px;
+
+    height: 146px;
+    align-self: flex-start;
+  }
+
+  &__welcome {
+    position: relative;
+    left: 26px;
+    @include mixins.bannerSmallFont;
+    line-height: 136px;
+
+    &:last-of-type {
+      left: -31px;
+    }
+  }
+
+  &__owly {
+    position: relative;
+
+    @include mixins.bannerFont;
+    line-height: 100px;
+
+    display: block;
+    height: 302px;
+
+    &__toCloud {
+      position: absolute;
+      top: -107%;
+      left: -136px;
+
+      width: 360px;
+    }
+  }
+}

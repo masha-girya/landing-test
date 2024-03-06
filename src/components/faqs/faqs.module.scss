@@ -1,0 +1,57 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.faqs {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+
+  margin-top: 160px;
+
+  &__titleBox {
+    position: relative;
+    width: 45%;
+
+    &__title {
+      @include mixins.blockTitleFont;
+      line-height: 80px;
+
+      &_highlight {
+        color: var.$color-orange;
+      }
+    }
+
+    &__unicornImg {
+      position: absolute;
+      top: 210px;
+      left: 278px;
+      z-index: 0;
+
+      width: 321px;
+
+      transform: rotate(10deg) scaleX(-1);
+    }
+
+    &__rainbowImg {
+      position: relative;
+      z-index: 0;
+      bottom: -180px;
+      left: -20%;
+
+      transform: rotate(-20deg);
+
+      width: 579px;
+    }
+  }
+
+  &__detailsBox {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    width: 632px;
+  }
+}

@@ -1,0 +1,75 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.button {
+  width: 100%;
+  height: max-content;
+
+  padding: 32px;
+
+  border-radius: 56px;
+
+  @include mixins.buttonFont;
+
+  transition: background-color 0.3s ease;
+
+  &_orange {
+    color: var.$color-white;
+    background-color: var.$color-orange;
+
+    &:hover {
+      background-color: var.$color-orange-subtext;
+    }
+  }
+
+  &_grey {
+    color: var.$color-black;
+    background-color: var.$color-grey-background;
+
+    &:hover {
+      background-color: var.$color-grey-input;
+    }
+  }
+
+  &_black {
+    color: var.$color-white;
+    background-color: var.$color-black;
+    border: 1px solid transparent;
+
+    transition: background-color 0.3s ease, color 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      color: var.$color-black;
+      background-color: var.$color-white;
+      border-color: var.$color-black;
+    }
+  }
+
+  &_transparent {
+    padding: 20px;
+
+    border: 1px solid var.$color-grey-light;
+    @include mixins.demoFont;
+
+    &:hover {
+      background-color: var.$color-grey-light;
+    }
+  }
+
+  &_withIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px 20px 20px 24px;
+  }
+
+  &__icon {
+    display: flex;
+
+    width: 20px;
+    height: 20px;
+  }
+}

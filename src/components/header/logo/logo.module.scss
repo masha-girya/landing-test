@@ -1,0 +1,7 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.logo {
+  @include mixins.logoFont;
+  color: var.$color-black;
+}

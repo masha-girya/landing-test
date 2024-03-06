@@ -1,0 +1,24 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.about {
+  margin: 184px 0;
+
+  &__title {
+    @include mixins.blockTitleFont;
+    height: 80px;
+    line-height: 80px;
+
+    margin-bottom: 64px;
+
+    &_blue {
+      color: var.$color-blue-main;
+    }
+  }
+
+  &__prosCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+}

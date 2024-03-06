@@ -1,0 +1,43 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 80px;
+  margin-top: 160px;
+
+  background-color: var.$color-black;
+  border-radius: 40px;
+
+  &__rightCol {
+    &__socialsList {
+      display: flex;
+      gap: 12px;
+
+      margin-bottom: 73px;
+
+      &__social {
+        svg {
+          transition: transform 0.3s ease;
+        }
+
+        &:hover {
+          svg {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    &__rightsText {
+      color: var.$color-orange;
+    }
+  }
+
+  &__leftCol {
+    display: flex;
+    gap: 103px;
+  }
+}

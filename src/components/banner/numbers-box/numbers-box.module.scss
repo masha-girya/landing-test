@@ -1,0 +1,52 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.numbersBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 308px;
+  height: 121px;
+
+  padding: 0 32px;
+
+  border-radius: 32px;
+
+  &_orange {
+    color: var.$color-orange-subtext;
+    background-color: var.$color-orange-background;
+  }
+
+  &_blue {
+    color: var.$color-blue-main;
+    background-color: var.$color-blue-background;
+  }
+
+  &__numbers {
+    @include mixins.darumaBoxFont;
+    letter-spacing: -0.05em;
+    color: var.$color-blue-main;
+
+    line-height: 51px;
+    height: 71px;
+
+    &_orange {
+      color: var.$color-orange;
+    }
+
+    &__percentage {
+      font-size: 48px;
+    }
+  }
+
+  &__text {
+    letter-spacing: -0.02em;
+    max-width: 110px;
+    color: var.$color-blue-main;
+
+    &_orange {
+      color: var.$color-orange;
+    }
+  }
+}

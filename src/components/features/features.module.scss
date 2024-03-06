@@ -1,0 +1,41 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__textBox {
+    width: 410px;
+
+    &__title {
+      @include mixins.itemTitleFont;
+      line-height: 57px;
+
+      &_highlight {
+        color: var.$color-orange;
+      }
+      &_highlightBlue {
+        color: var.$color-blue-main;
+      }
+    }
+
+    &__text {
+      @include mixins.boxTextFont;
+      color: var.$color-grey-main;
+
+      margin: 37px 0 64px;
+    }
+
+    &__button {
+      width: 175px;
+    }
+  }
+}

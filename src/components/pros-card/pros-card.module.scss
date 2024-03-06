@@ -1,0 +1,71 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.prosCard {
+  display: flex;
+  flex-direction: column;
+
+  padding: 48px;
+
+  height: 315px;
+  width: 424px;
+
+  border-radius: 32px;
+
+  &_orange {
+    background-color: var.$color-orange-background;
+
+    h5 {
+      color: var.$color-orange-text;
+    }
+
+    p {
+      color: var.$color-orange-subtext;
+      opacity: 0.6;
+    }
+  }
+
+  &_green {
+    background-color: var.$color-green-background;
+
+    h5 {
+      color: var.$color-green-main;
+    }
+
+    p {
+      color: #3d6904;
+      opacity: 0.6;
+    }
+  }
+
+  &_blue {
+    background-color: var.$color-blue-background;
+
+    h5 {
+      color: var.$color-blue-main;
+    }
+
+    p {
+      color: #014ebe;
+      opacity: 0.6;
+    }
+  }
+
+  &__title {
+    @include mixins.boxTitleFont;
+    margin: 7px 0 16px;
+
+    max-width: 250px;
+  }
+
+  &__text {
+    @include mixins.boxTextFont;
+  }
+
+  &__icon {
+    align-self: flex-end;
+
+    width: 84px;
+    height: 84px;
+  }
+}

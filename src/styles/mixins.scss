@@ -1,0 +1,75 @@
+@mixin boxTextFont {
+  font-family: 'Inter400';
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+@mixin inputFont {
+  font-family: 'Inter400';
+  font-size: 20px;
+  letter-spacing: -0.03em;
+}
+
+@mixin navFont {
+  font-family: 'Inter500';
+  font-size: 16px;
+}
+
+@mixin demoFont {
+  font-family: 'Inter600';
+  font-size: 16px;
+}
+
+@mixin buttonFont {
+  font-family: 'Inter600';
+  font-size: 20px;
+  letter-spacing: -0.04em;
+  line-height: 20px;
+}
+
+@mixin boxTitleFont {
+  font-family: 'Inter600';
+  font-size: 28px;
+  letter-spacing: -0.05em;
+}
+
+@mixin logoFont {
+  font-family: 'Inter700';
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+@mixin bannerFont {
+  font-family: 'Darumadrop';
+  font-size: 512px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@mixin bannerSmallFont {
+  font-family: 'Darumadrop';
+  font-size: 229px;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+
+@mixin blockTitleFont {
+  font-family: 'Darumadrop';
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+}
+
+@mixin itemTitleFont {
+  font-family: 'Darumadrop';
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: -0.07em;
+}
+
+@mixin darumaBoxFont {
+  font-family: 'Darumadrop';
+  font-size: 86px;
+  font-weight: 400;
+}

@@ -1,0 +1,32 @@
+@use 'styles/variables.scss' as var;
+@use 'styles/mixins.scss';
+
+.team {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 363px;
+  height: 174px;
+
+  &__indent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__members {
+    width: 170px;
+  }
+
+  &__text {
+    width: 143px;
+
+    @include mixins.navFont;
+    color: var.$color-grey-main;
+    letter-spacing: -0.02em;
+  }
+}
