@@ -12,12 +12,19 @@ export const ImageBox = (props: IProps) => {
 
   return (
     <div className={styles.imageBox}>
-      <img className={styles.imageBox__img} src={image} />
+      <img
+        className={styles.imageBox__img}
+        src={image}
+        alt="Feature Image"
+        loading="lazy"
+      />
       <img
         className={classNames(styles.imageBox__topImg, {
           [styles.imageBox__topImg_isOwl]: isOwl,
         })}
         src={topImage}
+        alt="Feature top Image"
+        loading="lazy"
       />
     </div>
   );

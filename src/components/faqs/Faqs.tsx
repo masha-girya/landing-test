@@ -9,12 +9,23 @@ export const FAQs = () => {
     <article className={styles.faqs}>
       <div className={styles.faqs__titleBox}>
         <h3 className={styles.faqs__titleBox__title}>
-          Discover<br/>
+          Discover
+          <br />
           <span className={styles.faqs__titleBox__title_highlight}> FAQs </span>
           about Owly
         </h3>
-        <img src={UnicornImg} alt="Unicorn" className={styles.faqs__titleBox__unicornImg} />
-        <img src={RainbowImg} alt="Rainbow" className={styles.faqs__titleBox__rainbowImg} />
+        <img
+          src={UnicornImg}
+          alt="Unicorn"
+          className={styles.faqs__titleBox__unicornImg}
+          loading="lazy"
+        />
+        <img
+          src={RainbowImg}
+          alt="Rainbow"
+          className={styles.faqs__titleBox__rainbowImg}
+          loading="lazy"
+        />
       </div>
       <div className={styles.faqs__detailsBox}>
         {FAQ.map((faq, index) => (
